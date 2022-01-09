@@ -156,5 +156,26 @@ public class LinkedList {
         }
         return c;
     }
+    public void sort()
+    {
+        Node temp=head;
+        Node fwd=null;
+        while (temp!=null)
+        {
+            fwd=temp.next;
+            while (fwd!=null)
+            {
+                if(temp.data > fwd.data)
+                {
 
+                    int temp2=fwd.data;
+                    fwd.data=temp.data;
+                    temp.data=temp2;
+
+                }
+                fwd=fwd.next;
+            }
+            temp=temp.next;
+        }
+    }
 }

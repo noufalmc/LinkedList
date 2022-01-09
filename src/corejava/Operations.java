@@ -81,7 +81,18 @@ public class Operations {
         System.out.println("Size is ="+LL.size());
 
     }
-
+    public void sort()
+    {
+        LL.push(56);
+        LL.push(30);
+        LL.push(40);
+        LL.push(70);
+        System.out.println("before");
+        LL.print();
+        LL.sort();
+        System.out.println("after");
+        LL.print();
+    }
 
 
 

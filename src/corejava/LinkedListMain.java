@@ -47,7 +47,9 @@ public class LinkedListMain {
             case 8:
                 op.searchDelete();
 
-            
+            case 9:
+              op.sort();
+                break;
         }
     }
 }
