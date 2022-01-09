@@ -66,5 +66,23 @@ public class Operations {
         LL.searchInsert(30);
         LL.print();
     }
+    public void  searchDelete()
+    {
+        LL.push(56);
+        LL.push(30);
+        LL.push(40);
+        LL.push(70);
+        System.out.println("before");
+        LL.print();
+        System.out.println("Size is ="+LL.size());
+        LL.searchDelete(40);
+        System.out.println("after");
+        LL.print();
+        System.out.println("Size is ="+LL.size());
+
+    }
+
+
+
 
 }

@@ -88,7 +88,7 @@ public class LinkedList {
         int found=0;
         while (temp!=null)
         {
-            if(temp.data==data)
+            if(temp.data == data)
             {
                 found=1;
                 System.out.println("Item Found");
@@ -124,4 +124,37 @@ public class LinkedList {
             System.out.println("Item Not Found");
         }
     }
+    public void searchDelete(int data)
+    {
+        Node temp=head;
+        Node temp1=head;
+        int found=0;
+        while (temp!=null)
+        {
+            if(temp.data == data)
+            {
+                found=1;
+                temp1.next=temp.next;
+
+            }
+            temp1=temp;
+            temp=temp.next;
+        }
+        if(found==0)
+        {
+            System.out.println("Item Not Found");
+        }
+    }
+    public int size()
+    {
+        Node temp=head;
+        int c=0;
+        while (temp!=null)
+        {
+            temp=temp.next;
+            c++;
+        }
+        return c;
+    }
+
 }
