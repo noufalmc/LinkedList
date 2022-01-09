@@ -17,6 +17,7 @@ public class LinkedListMain {
         System.out.println("Enter 3 add the item at inbetween");
         System.out.println("Enter 4 del the item at head");
         System.out.println("Enter 5 pop the item");
+        System.out.println("Enter 6 Search the item");
         switch(sc.nextInt())
         {
             case 1:
@@ -31,9 +32,13 @@ public class LinkedListMain {
             case 4:
                 op.delHead();
                 break;
-                case 5:
-                    op.popList();
-                    break;
+            case 5:
+                op.popList();
+                break;
+            case 6:
+                op.search();
+                break;
+
         }
     }
 }

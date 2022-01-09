@@ -48,5 +48,12 @@ public class Operations {
        System.out.println("After");
        LL.print();
    }
+   public void search()
+   {
+       LL.push(56);
+       LL.push(30);
+       LL.push(70);
+       LL.search(30);
+   }
 
 }

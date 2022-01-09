@@ -18,7 +18,7 @@ public class LinkedList {
          newnode.next=temp;
 
       }
-      
+
         return newnode;
     }
 
@@ -80,6 +80,25 @@ public class LinkedList {
             }
             temp1=temp;
             temp=temp.next;
+        }
+    }
+    public void search(int data)
+    {
+        Node temp=head;
+        int found=0;
+        while (temp!=null)
+        {
+            if(temp.data==data)
+            {
+                found=1;
+                System.out.println("Item Found");
+                break;
+            }
+            temp=temp.next;
+        }
+        if(found==0)
+        {
+            System.out.println("Item Not Found");
         }
     }
 }
