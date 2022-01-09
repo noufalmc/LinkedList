@@ -9,5 +9,33 @@ public class Operations {
        LL.push(56);
        LL.print();
     }
+   public void appendList()
+   {
+       LL.append(56);
+       LL.append(30);
+       LL.append(70);
+       LL.print();
+   }
+   public void inBetween()
+   {
+       Node firstNode=LL.push(56);
+       Node secondNode=LL.push(70);
+       System.out.println("before");
+       LL.print();
+       LL.inBetween(secondNode,30);
+       System.out.println("After");
+       LL.print();
+   }
+   public void delHead()
+   {
+       LL.push(70);
+       LL.push(30);
+       LL.push(56);
+       System.out.println("before");
+       LL.print();
+       LL.delHead();
+       System.out.println("After");
+       LL.print();
+   }
 
 }
