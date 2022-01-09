@@ -37,5 +37,16 @@ public class Operations {
        System.out.println("After");
        LL.print();
    }
+   public void popList()
+   {
+       LL.push(56);
+       LL.push(30);
+       LL.push(70);
+       System.out.println("before");
+       LL.print();
+       LL.delHead();
+       System.out.println("After");
+       LL.print();
+   }
 
 }

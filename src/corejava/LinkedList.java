@@ -18,6 +18,7 @@ public class LinkedList {
          newnode.next=temp;
 
       }
+      
         return newnode;
     }
 
@@ -63,7 +64,22 @@ public class LinkedList {
     }
     public void delHead()
     {
-
         head=head.next;
+    }
+    public void popList()
+    {
+        Node temp;
+        temp=head;
+        Node temp1=head;
+        while (temp!=null)
+        {
+
+            if(temp.next==null)
+            {
+                temp1.next=null;
+            }
+            temp1=temp;
+            temp=temp.next;
+        }
     }
 }
