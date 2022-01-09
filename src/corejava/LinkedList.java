@@ -101,4 +101,27 @@ public class LinkedList {
             System.out.println("Item Not Found");
         }
     }
+    public void searchInsert(int data)
+    {
+        Node temp=head;
+        Node temp1=head;
+        int found=0;
+        while (temp!=null)
+        {
+            if(temp.data==data)
+            {
+                found=1;
+                Node newNode=new Node(40);
+                newNode.next=temp;
+                temp1.next=newNode;
+
+            }
+            temp1=temp;
+            temp=temp.next;
+        }
+        if(found==0)
+        {
+            System.out.println("Item Not Found");
+        }
+    }
 }

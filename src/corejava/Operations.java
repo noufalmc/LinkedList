@@ -1,5 +1,7 @@
 package corejava;
 
+import java.security.PublicKey;
+
 public class Operations {
     LinkedList LL=new LinkedList();
     public void addAtStart()
@@ -55,5 +57,14 @@ public class Operations {
        LL.push(70);
        LL.search(30);
    }
+   public void searchInsert()
+    {
+        LL.push(56);
+        LL.push(30);
+        LL.push(70);
+        LL.print();
+        LL.searchInsert(30);
+        LL.print();
+    }
 
 }

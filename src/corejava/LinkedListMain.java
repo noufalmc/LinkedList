@@ -18,6 +18,7 @@ public class LinkedListMain {
         System.out.println("Enter 4 del the item at head");
         System.out.println("Enter 5 pop the item");
         System.out.println("Enter 6 Search the item");
+        System.out.println("Enter 7 Search the item and insert");
         switch(sc.nextInt())
         {
             case 1:
@@ -38,6 +39,10 @@ public class LinkedListMain {
             case 6:
                 op.search();
                 break;
+            case 7:
+                op.searchInsert();
+                break;
+
 
         }
     }
